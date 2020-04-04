@@ -8,6 +8,7 @@ public class mainButtonClick : MonoBehaviour
    public GameObject textBox;
 
    public void ClickTheButton(){
-       GlobalCookies.CookieCount += 1;
+       GlobalMochi.MochiCount += 1;
    }
+
 }
