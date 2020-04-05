@@ -15,7 +15,7 @@ public class MakeStrawberry : MonoBehaviour
             statusBox.GetComponent<Animation>().Play("StatusAni");
        }else{
             GlobalMochi.MochiCount -= 1;
-            GlobalStrawberry.StrawberryCount += 1;
+            GlobalStrawberry.strawberryCount += 1;
        }
        
    }

@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class GlobalStrawberry : MonoBehaviour
 {
-    public static int StrawberryCount = 0;
+    public static int strawberryCount = 0;
 
-    public int InternalStrawberry;
-    public GameObject StrawberryDisplay;
+    public int internalStrawberry;
+    public GameObject strawberryDisplay;
     
 
    
     void Update()
     {
-        InternalStrawberry = StrawberryCount;
-        StrawberryDisplay.GetComponent<Text>().text = "Strawberry Mochi: " + InternalStrawberry;
+        internalStrawberry = strawberryCount;
+        strawberryDisplay.GetComponent<Text>().text = "Strawberry Mochi: " + internalStrawberry;
 
     }
 }

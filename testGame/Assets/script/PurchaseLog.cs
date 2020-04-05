@@ -8,8 +8,11 @@ public class PurchaseLog : MonoBehaviour
 
     public void StartAutoMochi(){
         AutoMochi.SetActive(true);
-        GlobalStrawberry.StrawberryCount -= GlobalMochiMaker.makerValue;
+        GlobalStrawberry.strawberryCount -= GlobalMochiMaker.makerValue;
         GlobalMochiMaker.makerValue *= 2;
         GlobalMochiMaker.turnOffButton = true;
+        GlobalMochiMaker.makerCount += 1;
+        GlobalMochiMaker.makerPerSecond += 1;
+
     }
 }
